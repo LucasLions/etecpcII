@@ -43,15 +43,15 @@ public class LoginPanel extends JFrame{
 		//Posicionando o Login
 		lblLogin.setBounds(50, 0, 50, 50);
 		add(lblLogin);		
-		txtLogin.setBounds(90, 10, 250, 25);
+		txtLogin.setBounds(100, 10, 250, 25);
 		add(txtLogin);
 		//Posicionandi a Senha
-		lblSenha.setBounds(50, 30, 50, 50);
+		lblSenha.setBounds(50, 40, 50, 50);
 		add(lblSenha);		
-		passFieldSenha.setBounds(90, 50, 250, 25);
+		passFieldSenha.setBounds(100, 50, 250, 25);
 		add(passFieldSenha);
 		
-		//Posicionando o Botão
+		//Posicionando o Botï¿½o
 		btnEntrar.setBounds(150, 100, 100, 25);
 		add(btnEntrar);
 		this.btnEntrar.addActionListener(new ActionListener() {
@@ -78,11 +78,6 @@ public class LoginPanel extends JFrame{
 		});		
 		
 		
-	}
-	
-	
-	public static void main(String[] args) throws Exception{
-		new App();
 	}
 	
 }
