@@ -5,7 +5,7 @@ import java.sql.DriverManager;
 
 public class Conexao {
 	public Connection getMysqlConnection() throws Exception{
-		String stringDeConexao = "jdbc:mysql://localhost/escolas";
+		String stringDeConexao = "jdbc:mysql://localhost/escola";
 		Class.forName("com.mysql.jdbc.Driver");
 		Connection conn = DriverManager.getConnection(stringDeConexao,"root","");
 		return conn;		
