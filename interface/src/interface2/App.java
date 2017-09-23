@@ -54,8 +54,7 @@ public class App
 	}
 	
 	public static void main(String[] args) throws Exception{
-		new App();
-		
+		new App();		
 		new LoginPanel(null);
 		Connection conn = new Conexao().getMysqlConnection();		
 		UserSistemaDAO daolog = new UserSistemaDAO(conn);

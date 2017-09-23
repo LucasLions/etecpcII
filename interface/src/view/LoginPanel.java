@@ -51,19 +51,19 @@ public class LoginPanel extends JFrame{
 		passFieldSenha.setBounds(100, 50, 250, 25);
 		add(passFieldSenha);
 		
-		//Posicionando o Botï¿½o
+		//Posicionando o Botão
 		btnEntrar.setBounds(150, 100, 100, 25);
 		add(btnEntrar);
 		this.btnEntrar.addActionListener(new ActionListener() {
 			
-			public void actionPerformed(ActionEvent e) {			
+			public void actionPerformed(ActionEvent e) {		
 
 				String nomeDoUsuarioQueQuerLogar = LoginPanel.this.txtLogin.getText(); 
 				String senhaDoUsuarioQueQuerLogar = LoginPanel.this.passFieldSenha.getText();
 				System.out.println();
 				App app2 = LoginPanel.this.app;
 				List<UserSistema> usuariosCadastrados = LoginPanel.this.app.getUsuariosCadastrados();
-				
+								
 				for (UserSistema u : LoginPanel.this.app.getUsuariosCadastrados()) {
 					if(u.getLogin().equals(nomeDoUsuarioQueQuerLogar) && u.getSenha().equals(senhaDoUsuarioQueQuerLogar)) {
 						LoginPanel.this.app.getUsuariosLogados().add(u);

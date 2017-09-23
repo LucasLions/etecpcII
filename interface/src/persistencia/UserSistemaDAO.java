@@ -19,7 +19,7 @@ Connection Conn;
 	
 	public void inserir(Object o) throws Exception{
 		Conexao daolog = new Conexao();
-		String sql = "INSERT INTO alunos(nome) values('"+((UserSistema)o).getLogin()+"')";
+		String sql = "INSERT INTO aluno(nome) values('"+((UserSistema)o).getLogin()+"')";
 		System.out.println(sql);		
 		PreparedStatement stm = Conn.prepareStatement(sql);
 		stm.executeUpdate();
